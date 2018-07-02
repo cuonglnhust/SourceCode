@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Project</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"> -->
+	
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	</div>
+
+	<div id="header-1">
+	</div>
+	
+
+	<div id="header-2">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Apparel</a></li>
+			<li><a href="">Fashion</a></li>
+			<li><a href="">News</a></li>
+			<li><a href="">Portfolio</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</div>
+
+	<div id="header-3" 
+				 
+				
+	>
+		<img class="mySlides" src="slide-1.jpg" alt="slide">
+		<img class="mySlides" src="slide-2.jpg" style=" width: 1600px;" alt="slide">
+		<img class="mySlides" src="slide-3.jpg" style=" width: 1600px;" alt="slide">
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+		<script>
+					var slideIndex = 0;
+					showDivs(slideIndex);
+					carousel();
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					 	 var x = document.getElementsByClassName("mySlides");
+						  if (n > x.length) {slideIndex = 1}    
+					 	 if (n < 1) {slideIndex = x.length}
+					  	for (i = 0; i < x.length; i++) {
+					  	  				 x[i].style.display = "none";  
+					 								 }
+					 				 	x[slideIndex-1].style.display = "block";  
+									}
+
+
+					function carousel() {
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) {
+				      x[i].style.display = "none"; 
+				    }
+				    slideIndex++;
+				    if (slideIndex > x.length) {slideIndex = 1} 
+				    x[slideIndex-1].style.display = "block"; 
+				    setTimeout(carousel, 2000); // Change image every 2 seconds	
+				    
+				}
+	</script>
+
+</div>
+
+<div id="container">
+	<div id="content-1">
+		<h1 style="font-size: 27px;">Check our lastest Wordpress Theme which implements a Page Builder and Revolution Slider</h1>
+		<p>learn how to build Wordpress with ease with a premium Page Builder which allows you to add new Pages in seconds </p>
+	</div>
+
+	<div id="content-2" style=>
+		<div class="elipse" style="">
+			<img  src="elipse.png" alt="">
+			<a href="" class="sub-elipse" style=" color: #FFFFFF; background-color: #3bbdfb; text-decoration: none; padding: 3px 5px;">Read more>></a>
+		</div>
+			<div class="elipse">
+			<img src="elipse.png" alt="">
+			<a href="" class="sub-elipse" style=" color: #FFFFFF;background-color: #3bbdfb; text-decoration: none; padding: 3px 5px;">Read more>></a>
+			
+		</div>
+			<div class="elipse">
+			<img src="elipse.png" alt="">
+			<a href="" class="sub-elipse" style="color: #FFFFFF;background-color: #3bbdfb; text-decoration: none; padding: 3px 5px;">Read more>></a>
+			
+		</div>
+			<div class="elipse">
+			<img src="elipse.png" alt="">
+			<a href="" class="sub-elipse" style="color: #FFFFFF;background-color: #3bbdfb; text-decoration: none; padding: 3px 5px;">Read more>></a>
+			
+		</div>
+	</div>
+
+
+	<div id="content-3">
+		<div class="text">
+			<h1>RECENT PORTFOLIO</h1>
+
+			<p style="margin-top: 70px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span style="color: #3bbdfb;">Dolorem nisi</span> aspernatur veniam quidem </p>
+
+		</div>
+
+		<div class="link">
+			<a href="" target="_blank"><img src="photo-1.png" alt="" /></a>
+			<a href="" target="_blank"><img src="photo-2.png" alt="" /></a>
+			<a href="" target="_blank"><img src="photo-3.png" alt="" /></a>
+			<a href="" target="_blank"><img src="photo-4.png" alt="" /></a>
+		</div>
+	</div>
+
+	<div id="content-4">
+		<div id="part-1">
+			<h1 style="padding-top: 30px;">TESTIMONIALS</h1>
+			<img src="TESTI-1.png" alt="">
+			<img src="TESTI-1.png" alt="">
+		</div>
+
+		<div style="" id="part-1">
+			<h1 style="padding-top: 30px;">FREQUENTLY ASKED QUESTION</h1>
+			
+			<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction()"><i style="margin-top: 5px;"  class="fa fa-plus-circle"></i>  | How to add iconsto Button</label>
+
+				<div style="display: none;" id="myDIV">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+
+				<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction1()"><i style="" class="fa fa-plus-circle"></i>  | How to delete event</label>
+
+				<div style="display: none;" id="myDIV-1">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+
+				<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction2()"><i style="" class="fa fa-plus-circle"></i>  | How to install Wordpress</label>
+
+				<div style="display: none;" id="myDIV-2">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+
+				<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction3()"><i style="" class="fa fa-plus-circle"></i>  | How to create new FAQ?</label>
+
+				<div style="display: none;" id="myDIV-3">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+
+				<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction4()"><i style="" class="fa fa-plus-circle"></i>  | How to install the demo Content?</label>
+
+				<div style="display: none;" id="myDIV-4">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+
+				<label class="label" style="width:550px; height: 30px; display: block; text-align: left; border: 2px solid #BBBBBB;" onclick="myFunction5()"><i style="" class="fa fa-plus-circle"></i>  | How to install the demo Content?</label>
+
+				<div style="display: none;" id="myDIV-5">
+  				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit quam cumque tempora, sit ipsa, fugiat eveniet sapiente saepe non ullam!
+				</div>
+   		</div>
+
+
+   			<script>
+			function myFunction() {
+    		var x = document.getElementById("myDIV");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+			function myFunction1() {
+    		var x = document.getElementById("myDIV-1");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+			function myFunction2() {
+    		var x = document.getElementById("myDIV-2");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+			function myFunction3() {
+    		var x = document.getElementById("myDIV-3");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+			function myFunction4() {
+    		var x = document.getElementById("myDIV-4");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+			function myFunction5() {
+    		var x = document.getElementById("myDIV-5");
+               if (x.style.display === "none") {
+                     x.style.display = "block";
+               } else {
+                     x.style.display = "none";
+    			 }
+			}
+		
+					
+			</script>
+	 </div>
+    </div>
+	 <div id="content-5">
+	 	<img src="ourlastest.png" alt="">
+	 </div>
+
+
+  <div id="content-6">
+  <div class="customer-logos">
+  <div class="slide"><img style="width: 200px; height: 110px; padding-left: 10px;" src="fslide-1.png"></div>
+  <div class="slide"><img style="width: 200px; height: 110px; padding-left: 10px;"  src="fslide-2.png"></div>
+  <div class="slide"><img style="width: 200px; height: 110px; padding-left: 10px;" src="fslide-3.png"></div>
+  <div class="slide"><img style="width: 200px; height: 110px;padding-left: 10px;"src="fslide-4.png"></div>
+  <div class="slide"><img style="width: 200px; height: 110px;padding-left: 10px;" src="fslide-5.png"></div>
+	</div>
+</div>
+
+
+		<script>
+			
+	$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+		</script>
+	 </div>
+
+<div id="footer">
+	<div id="footer-1">
+		<div id="part" class="part-1">
+			<h2  style="color: #fff;font-size: 20px; margin-left: 280px;margin-top: -1px;">Get to to know us better now!</h2>
+			<p style="color: #fff; font-size: 12px; margin-top: -15px; margin-left: 280px;">share your products over the social Networks</p>
+		</div>
+		<div id="part" class="part-2">
+			<a style="text-decoration: none; font-size: 23px" href="" class="fa fa-wifi"></a>
+			<a style="text-decoration: none;font-size: 23px" href="" class="fa fa-skype"></a>
+			<a style="text-decoration: none;font-size: 23px" href="" class="fa fa-facebook"></a>
+			<a style="text-decoration: none;font-size: 23px" href="" class="fa fa-instagram"></a>
+			<a style="text-decoration: none;font-size: 23px" href="" class="fa fa-info-circle"></a>
+
+		</div>
+		<div id="part" class="part-3">
+			<h2  style="color: #fff;font-size: 25px;margin-top: -1px; margin-left: 15px;">Search!</h2>
+			<p style="color: #fff; font-size: 12px; margin-top: -15px; margin-left: 15px;">Search across our website</p>
+		</div>
+
+		<div id="part" class="part-4">
+			<form action="">
+              <input class="search" style="margin-left: 50px; margin-top: 10px; height: 30px; border-radius: 5px; " type="text" placeholder="Search.." name="search">
+              <button   class="search" style=" border-radius: 5px; color: #3bbdfb;" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+		</div>
+	</div>
+
+	<div id="footer-2">
+		<div id="part-foot" class="part-1">
+			<img style="width: 650px; height: 200px;" src="footer-Reve.png" alt="">
+		</div>
+		<div id="part-foot" class="part-2">
+			<h3 style="font-size: 20px; margin-left: 70px; margin-top: 20px;">Sign to Newsletter</h3>
+			<form action="">
+				<input  type="text"  id="formGroupExampleInput" placeholder="Name" ">
+				<input  type="text"  id="formGroupExampleInput" placeholder="Email" ">
+				<input style="margin-left: 180px; background-color:#3bbdfb; color: #fff; "  type="submit" class="" id="formGroupExampleInput" value="SUBCRIBE" >
+			</form>
+		</div>
+	</div>
+
+	<div id="footer-3">
+		<div class="part-1">
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">PORTFOLIO</a></li>
+				<li><a href="">SITEMAP</a></li>
+				<li><a href="">CONTACT</a></li>
+			</ul>
+		</div>
+
+		<div class="part-2">
+			<p>Revenant	<i class="fa fa-copyright"></i>2013 by PremiumCoding | All Rights Reserved</p>
+		</div>
+	</div>
+</div>
+		
+		
+	
+</body>
+</html>
